@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/4c536a6bd5.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>TOP Etch-a-Sketch</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1 class="head">Etch-a-Sketch</h1>
+        <p class="subhead">Welcome to the Etch-a-Sketch Browser App</p>
+        <p class="description">
+          Choose one of the modes. <br />Hover over the grid to place the paint.
+          <br />Enjoy your masterpiece of reset the Canvas to start again!
+        </p>
+      </div>
+      <div class="settings">
+        <div class="modes">
+          <button id="blackBtn">Black Mode</button>
+          <button id="colorBtn">Color Mode</button>
+          <button id="grayscaleBtn">Grayscale Mode</button>
+        </div>
+        <div class="grid-size">
+          <label for="grid-size"
+            >Select Grid Size: <span id="grid-value">32 x 32</span></label
+          >
+          <input
+            type="range"
+            name="grid-size"
+            id="grid-size"
+            value="32"
+            min="4"
+            max="64"
+          />
+          <div id="progress-bar"></div>
+        </div>
+        <div class="reset">
+          <button type="reset" id="resetBtn">RESET</button>
+        </div>
+      </div>
+      <div id="grid" class="grid"></div>
+    </div>
+    <footer>
+      Created by Bran Lee<br />for
+      <a
+        href="https://www.theodinproject.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        >The Odin Project</a
+      >
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
